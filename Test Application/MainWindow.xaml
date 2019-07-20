@@ -1,0 +1,27 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:FacilisUI="clr-namespace:FacilisUI;assembly=FacilisUI"
+    x:Class="MainWindow" mc:Ignorable="d"
+    Title="MainWindow" Height="450" Width="800">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <FacilisUI:Hamburger ItemClicked="BurgerMenu_ItemClicked" Grid.Column="0">
+            <FacilisUI:Hamburger.Items>
+                <FacilisUI:HamburgerMenuItem Caption="Startpage" Icon="" Selected="True" />
+                <FacilisUI:HamburgerMenuItem Caption="Oh happy day" Icon="" />
+                <FacilisUI:HamburgerMenuItem Caption="Telephony" Icon="" />
+                <FacilisUI:HamburgerMenuItem Caption="Seach" Icon="" />
+                <FacilisUI:HamburgerMenuItem Caption="Settings" Icon="" />
+                <FacilisUI:HamburgerMenuItem Caption="Support" Icon="" />
+            </FacilisUI:Hamburger.Items>
+        </FacilisUI:Hamburger>
+        <ListBox Name="lstEvents" BorderThickness="0" FontSize="14" Grid.Column="1" />
+    </Grid>
+
+</Window>
