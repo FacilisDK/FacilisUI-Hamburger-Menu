@@ -4,4 +4,4 @@ Do a Build > Build Solution on loading the project for the first time.
 
 ![alt text](http://facilis.dk/Images/Screenshots/FacilisUI-Hamburger-Screenshot.gif)
 
-This is my first control and first project on GitHub.
+This is my first public control and first project on GitHub.
